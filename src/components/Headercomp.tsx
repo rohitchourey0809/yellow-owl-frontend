@@ -12,6 +12,7 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
+import Leftside from "./Leftside";
 
 const Headercomp = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,6 +43,7 @@ const Headercomp = () => {
           >
             <DrawerHeader></DrawerHeader>
             <DrawerBody>
+              <Leftside/>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

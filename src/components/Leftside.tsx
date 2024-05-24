@@ -12,7 +12,7 @@ const Leftside = () => {
         height={"100vh"}
         pt={"20px"}
       >
-          <Flex padding={"15px"} gap={"20px"}>
+      <Flex padding={"15px"} gap={"20px"}>
       <Image
         borderRadius="full"
         boxSize="50px"

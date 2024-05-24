@@ -26,8 +26,9 @@ const StudentModal: React.FC<Props> = ({ onSuccess }) => {
       colorScheme="green"
      width="auto"
       fontSize={["xs", "sm", "md"]} 
-      px={["10", "12", "14"]} 
-      p={"auto"}
+      px={["22"]} 
+      py={["auto"]}
+    
 
       textAlign={"center"}
       whiteSpace="normal"
