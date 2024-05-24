@@ -22,11 +22,12 @@ const EditModal: React.FC<EditModalProps> = ({ onSuccess, studentId, isOpen, onC
         </ModalBody>
         <ModalFooter>
          
-       <Flex justify="center" mr={10}>
-            <Button colorScheme="blue"  onClick={onClose}>
-              Close
+   
+           <ModalFooter width="100%" display="flex" justifyContent="center">
+            <Button colorScheme="red" onClick={onClose} px={48}>
+              Cancel
             </Button>
-          </Flex>
+          </ModalFooter>
         </ModalFooter>
       </ModalContent>
     </Modal>
