@@ -1,3 +1,4 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Drawer,
@@ -6,12 +7,11 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  MenuIcon,
+  
   Show,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-// import ProfileCard from "./ProfileCard";
 
 const Headercomp = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,7 +19,7 @@ const Headercomp = () => {
   return (
     <Flex
       bg={
-        " linear-gradient(54deg, rgba(74,221,128,1) 0%, rgba(59,130,245,1) 100%);"
+        "linear-gradient(54deg, rgba(74,221,128,1) 0%, rgba(59,130,245,1) 100%);"
       }
       height={"10vh"}
       gap={"15px"}
@@ -30,7 +30,7 @@ const Headercomp = () => {
     >
       <Show below="md">
         <Box padding={"20px"} cursor={"pointer"} onClick={onOpen}>
-          <MenuIcon color="white" fontSize={"23px"} />
+          <HamburgerIcon color="white" fontSize={"23px"} />
         </Box>
 
         <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
@@ -42,7 +42,6 @@ const Headercomp = () => {
           >
             <DrawerHeader></DrawerHeader>
             <DrawerBody>
-              {/* <ProfileCard /> */}
             </DrawerBody>
           </DrawerContent>
         </Drawer>

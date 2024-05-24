@@ -11,6 +11,8 @@ import {
   Button,
   useDisclosure,
   Text,
+  Flex,
+  Center,
 } from '@chakra-ui/react';
 
 interface Props {
@@ -29,18 +31,20 @@ const DeleteModal: React.FC<Props> = ({ studentId, isOpen, onClose, handleDelete
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>Delete Student</ModalHeader>
+      <ModalContent py={20}>
+        {/* <ModalHeader>Delete Student</ModalHeader> */}
         <ModalCloseButton />
         <ModalBody>
-          <Text>Are you sure you want to delete this student?</Text>
+         <Center> <Text>Are you sure you want to delete this student?</Text></Center>
         </ModalBody>
 
-        <ModalFooter>
-          <Button colorScheme="red" mr={3} onClick={confirmDelete}>
-            Yes, Delete
+        <ModalFooter >
+        <Flex  width="100%" justifyContent="center" gap={2}>
+            <Button colorScheme="green" px={20} onClick={confirmDelete}>
+            Yes
           </Button>
-          <Button variant="ghost" onClick={onClose}>Cancel</Button>
+          <Button colorScheme="red" px={20}  onClick={onClose}>No</Button>
+        </Flex>
         </ModalFooter>
       </ModalContent>
     </Modal>

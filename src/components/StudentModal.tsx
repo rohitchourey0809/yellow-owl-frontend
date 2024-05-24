@@ -22,8 +22,17 @@ const StudentModal: React.FC<Props> = ({ onSuccess }) => {
 
   return (
     <>
-      <Button onClick={onOpen} colorScheme="green"  
-          w={["100px", "100px", "300px"]}>
+      <Button  onClick={onOpen}
+      colorScheme="green"
+     width="auto"
+      fontSize={["xs", "sm", "md"]} 
+      px={["10", "12", "14"]} 
+      p={"auto"}
+
+      textAlign={"center"}
+      whiteSpace="normal"
+      
+    >
         ADD NEW STUDENT
       </Button>
 
@@ -35,9 +44,9 @@ const StudentModal: React.FC<Props> = ({ onSuccess }) => {
           <ModalBody>
             <StudentForm onSuccess={onSuccess} onClose={onClose} />
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
+          <ModalFooter width="100%" display="flex" justifyContent="center">
+            <Button colorScheme="red" onClick={onClose} px={48}>
+              Cancel
             </Button>
           </ModalFooter>
         </ModalContent>

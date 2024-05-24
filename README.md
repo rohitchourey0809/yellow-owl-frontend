@@ -82,3 +82,9 @@ Takes two numbers and returns the sum.
 for frontend ``` npm start ```
 
 for backend ``` npm run dev ```
+
+Frontend repo
+https://github.com/rohitchourey0809/yellow-owl-registrationform
+
+backend repo
+https://github.com/rohitchourey0809/Backend-yellow-owl
