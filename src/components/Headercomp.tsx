@@ -34,7 +34,7 @@ const Headercomp = () => {
           <HamburgerIcon color="white" fontSize={"23px"} />
         </Box>
 
-        <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
+        {/* <Drawer placement={"left"} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent
             bg={
@@ -46,7 +46,7 @@ const Headercomp = () => {
               <Leftside/>
             </DrawerBody>
           </DrawerContent>
-        </Drawer>
+        </Drawer> */}
       </Show>
 
       <Text color={"white"}>Students</Text>
