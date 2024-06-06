@@ -25,14 +25,14 @@ Student form Assignment
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
+
+
 
 
 ## API Reference
 
-#### Get all items
+#### POST all items
 
 ```http
   POST /students
@@ -42,7 +42,7 @@ Takes two numbers and returns the sum.
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-#### Get item
+#### POST item
 
 ```http
   POST /students/${id}
@@ -52,14 +52,12 @@ Takes two numbers and returns the sum.
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
 
 
 ## API Reference
 
-#### Get all items
+#### PUT all items
 
 ```http
   PUT /students
@@ -69,7 +67,7 @@ Takes two numbers and returns the sum.
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-#### Get item
+#### DELETE item
 
 ```http
   DELETE /students/${id}
@@ -79,16 +77,26 @@ Takes two numbers and returns the sum.
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
 
 for frontend ``` npm start ```
 
 for backend ``` npm run dev ```
 
+
+```
+
+
 Frontend repo
 https://github.com/rohitchourey0809/yellow-owl-registrationform
 
+
+```
+
+```
+
 backend repo
 https://github.com/rohitchourey0809/Backend-yellow-owl
+
+
+```
