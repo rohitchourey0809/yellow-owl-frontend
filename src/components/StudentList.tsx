@@ -22,6 +22,7 @@ import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import StudentModal from "./StudentModal";
 import DeleteModal from "./DeleteModal";
 import EditModal from "./EditModal";
+import { ToastContainer, toast } from "react-toastify";
 
 const StudentList: React.FC = () => {
   const [students, setStudents] = useState<Student[]>([]);
@@ -58,6 +59,7 @@ const StudentList: React.FC = () => {
   const handleDelete = async (id: string) => {
     try {
       await deleteStudent(id);
+       toast.success("Deleted Enrollment Successfully")
       loadStudents();
     } catch (error) {
       console.error("Error deleting student:", error);
@@ -177,6 +179,7 @@ const StudentList: React.FC = () => {
           handleDelete={handleDelete}
         />
       </VStack>
+      <ToastContainer/>
     </Box>
   );
 };
